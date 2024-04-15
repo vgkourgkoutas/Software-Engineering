@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
+import android.content.Intent;
 import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
                 if ( (Username.equals(user) || Username.equals(user2) || Username.equals(user3)) && Password.equals(pass)) {
                     // Successful login
                     Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+
+                    Intent startIntent = new Intent(getApplicationContext(), menu.class);
+                    startActivity(startIntent);
+
                 } else {
                     // Failed login
                     Toast.makeText(MainActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
