@@ -41,14 +41,20 @@ public class MainActivity extends AppCompatActivity {
                 String Password = password.getText().toString();
 
                 // Implement authentication logic here
-                if ( (Username.equals(user) || Username.equals(user2) || Username.equals(user3)) && Password.equals(pass)) {
+                if ( (Username.equals(user) || Username.equals(user3)) && Password.equals(pass)) {
                     // Successful login
                     Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
 
                     Intent startIntent = new Intent(getApplicationContext(), menu.class);
                     startActivity(startIntent);
 
-                } else {
+                }
+                else if( Username.equals(user2) && Password.equals(pass) )
+                {
+                    Intent startIntent = new Intent(getApplicationContext(), menu_client.class);
+                    startActivity(startIntent);
+                }
+                else {
                     // Failed login
                     Toast.makeText(MainActivity.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
                 }
