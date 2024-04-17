@@ -133,8 +133,9 @@
         android:layout_width="446dp"
         android:layout_height="332dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo_techaholics"
-        tools:layout_editor_absoluteY="31dp" />
+        tools:layout_editor_absoluteY="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
