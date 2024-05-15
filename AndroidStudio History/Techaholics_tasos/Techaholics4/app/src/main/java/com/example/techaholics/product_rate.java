@@ -22,15 +22,58 @@ public class product_rate extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Button product = (Button) findViewById(R.id.product);
 
-        product.setOnClickListener(new View.OnClickListener() {
+        Button rate1 = (Button) findViewById(R.id.rate1);
+
+        rate1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), .class);
+                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
                 startActivity(startIntent);
             }
         });
+
+        Button rate2 = (Button) findViewById(R.id.rate2);
+
+        rate2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button rate3 = (Button) findViewById(R.id.rate3);
+
+        rate3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button rate4 = (Button) findViewById(R.id.rate4);
+
+        rate4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button rate5 = (Button) findViewById(R.id.rate5);
+
+        rate1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
+                startActivity(startIntent);
+            }
+        });
+
+
 
     }
 }
