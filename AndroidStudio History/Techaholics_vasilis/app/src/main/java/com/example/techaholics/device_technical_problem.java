@@ -35,10 +35,10 @@ public class device_technical_problem extends AppCompatActivity {
 
         Button playstation = (Button) findViewById(R.id.playstation);
 
-        back.setOnClickListener(new View.OnClickListener() {
+        playstation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), menu_client.class);
+                Intent startIntent = new Intent(getApplicationContext(), technical_support_ps5.class);
                 startActivity(startIntent);
             }
         });
