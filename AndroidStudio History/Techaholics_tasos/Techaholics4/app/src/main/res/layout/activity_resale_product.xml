@@ -130,19 +130,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.52" />
 
-    <EditText
-        android:id="@+id/describeproduct"
-        android:layout_width="398dp"
-        android:layout_height="29dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.766" />
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="79dp"
@@ -173,14 +160,30 @@
         android:id="@+id/submissionform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Υποβολή φόρμας"
         android:onClick="main2"
+        android:text="Υποβολή φόρμας"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintVertical_bias="0.963" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="319dp"
+        android:layout_height="110dp"
+        android:background="#FFFFFF"
+        android:ems="20"
+        android:gravity="start|top"
+        android:hint="Γράψε εδώ την περιγραφή και την κατάσταση..."
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

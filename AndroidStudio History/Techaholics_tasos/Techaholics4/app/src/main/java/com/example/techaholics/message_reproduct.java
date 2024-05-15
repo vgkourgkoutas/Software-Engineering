@@ -2,7 +2,9 @@ package com.example.techaholics;
 
 import android.os.Bundle;
 import android.view.View;
-
+import android.content.Intent;
+import android.widget.Button;
+import android.view.View;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -21,9 +23,18 @@ public class message_reproduct extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-    }
 
-    public void main1(View view) {
-        startActivity(new Intent(this,main1.class));
+        Button backbuttonrepro = (Button) findViewById(R.id.backbuttonrepro);
+
+        backbuttonrepro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), resale_product.class);
+                startActivity(startIntent);
+            }
+        });
+
+
     }
-    }
+}
+
