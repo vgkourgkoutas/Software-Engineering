@@ -9,7 +9,7 @@
     tools:context=".page_rate">
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/backtoratepro"
         android:layout_width="154dp"
         android:layout_height="55dp"
         android:text="Πήγαινε πίσω"

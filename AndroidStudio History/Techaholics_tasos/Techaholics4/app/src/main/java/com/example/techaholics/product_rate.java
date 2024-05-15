@@ -65,10 +65,20 @@ public class product_rate extends AppCompatActivity {
 
         Button rate5 = (Button) findViewById(R.id.rate5);
 
-        rate1.setOnClickListener(new View.OnClickListener() {
+        rate5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button backprorate = (Button) findViewById(R.id.backprorate);
+
+        backprorate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), rating_product.class);
                 startActivity(startIntent);
             }
         });

@@ -9,7 +9,7 @@
     tools:context=".product_rate">
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/backprorate"
         android:layout_width="144dp"
         android:layout_height="61dp"
         android:text="Πήγαινε πίσω"

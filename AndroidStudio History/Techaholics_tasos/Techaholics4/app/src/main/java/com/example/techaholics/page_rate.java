@@ -1,7 +1,9 @@
 package com.example.techaholics;
 
 import android.os.Bundle;
-
+import android.content.Intent;
+import android.widget.Button;
+import android.view.View;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -19,6 +21,16 @@ public class page_rate extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        Button backtoratepro = (Button) findViewById(R.id.backtoratepro);
+
+        backtoratepro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), rating_product.class);
+                startActivity(startIntent);
+            }
         });
     }
 }
