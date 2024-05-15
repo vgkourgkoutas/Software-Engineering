@@ -31,10 +31,20 @@ public class menu_client extends AppCompatActivity {
 
         Button createOrderButton = (Button) findViewById(R.id.createOrder);
 
+        Button technical_button = (Button) findViewById(R.id.technical_button);
+
         createOrderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), create_order.class);
+                startActivity(startIntent);
+            }
+        });
+
+        technical_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), device_technical_problem.class);
                 startActivity(startIntent);
             }
         });
