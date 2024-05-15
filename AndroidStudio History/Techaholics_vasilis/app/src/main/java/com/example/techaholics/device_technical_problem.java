@@ -43,6 +43,16 @@ public class device_technical_problem extends AppCompatActivity {
             }
         });
 
+        Button iphone = (Button) findViewById(R.id.iphone);
+
+        iphone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), technical_support_samsung.class);
+                startActivity(startIntent);
+            }
+        });
+
 
 
     }

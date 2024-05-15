@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.524" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/iphone"
         android:layout_width="209dp"
         android:layout_height="46dp"
         android:text="iphone 15"
@@ -71,7 +71,7 @@
         app:layout_constraintVertical_bias="0.614" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/samsung"
         android:layout_width="209dp"
         android:layout_height="52dp"
         android:text="Samsung Television Oled"
@@ -82,7 +82,7 @@
         app:layout_constraintVertical_bias="0.714" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/mi"
         android:layout_width="206dp"
         android:layout_height="47dp"
         android:text="Mi Band 6"
@@ -93,7 +93,7 @@
         app:layout_constraintVertical_bias="0.816" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/huawei"
         android:layout_width="208dp"
         android:layout_height="48dp"
         android:text="Huawei Freebuds Pro 2"
