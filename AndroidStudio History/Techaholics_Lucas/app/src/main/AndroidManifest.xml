@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Techaholics"
         tools:targetApi="31">
         <activity
+            android:name=".new_tech"
+            android:exported="false" />
+        <activity
             android:name=".technical_support_submit_rating"
             android:exported="false" />
         <activity
@@ -25,10 +28,10 @@
             android:name=".technical_support_miband6"
             android:exported="false" />
         <activity
-            android:name=".TechnicalSupportSamsungtvActivity"
+            android:name=".technical_support_samsungtv"
             android:exported="false" />
         <activity
-            android:name=".TechninalSupportIphone15Activity"
+            android:name=".techninal_support_iphone15"
             android:exported="false" />
         <activity
             android:name=".technical_support_ps5"
