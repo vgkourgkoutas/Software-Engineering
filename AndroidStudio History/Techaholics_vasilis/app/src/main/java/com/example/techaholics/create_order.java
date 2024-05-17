@@ -29,11 +29,13 @@ public class create_order extends AppCompatActivity {
 
         Button button = (Button) findViewById(R.id.buy);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        Button go_back = (Button) findViewById(R.id.go_back);
+
+        go_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent startIntent = new Intent(getApplicationContext(), .class);
-                //startActivity(startIntent);
+                Intent startIntent = new Intent(getApplicationContext(), menu_client.class);
+                startActivity(startIntent);
             }
         });
 

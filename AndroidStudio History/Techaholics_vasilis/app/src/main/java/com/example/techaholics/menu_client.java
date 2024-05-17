@@ -44,7 +44,7 @@ public class menu_client extends AppCompatActivity {
         technical_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), device_technical_problem.class);
+                Intent startIntent = new Intent(getApplicationContext(), technical_support.class);
                 startActivity(startIntent);
             }
         });
