@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#255358"
+    android:outlineProvider="background"
     tools:context=".page_rate">
 
     <Button
@@ -17,12 +18,13 @@
         tools:layout_editor_absoluteY="32dp" />
 
     <RatingBar
-        android:id="@+id/ratingBar2"
+        android:id="@+id/rbStars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:progressBackgroundTint="#FF9800"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FF9800"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="204dp" />
+        tools:layout_editor_absoluteY="260dp" />
 
     <TextView
         android:id="@+id/textView20"
@@ -52,10 +54,10 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.656" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/submform"
         android:layout_width="161dp"
         android:layout_height="66dp"
         android:text="Υποβολή αξιολόγησης"
@@ -63,16 +65,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
+        app:layout_constraintVertical_bias="0.894" />
 
     <TextView
-        android:id="@+id/textView22"
-        android:layout_width="347dp"
-        android:layout_height="99dp"
-        android:text="* Σε περίπτωση που έχερε κάνει πάνω απο 10 αξιολογήσης θα δημιουργηθεί ένας κωδικός ο οποίος θα σας σταλεί μέσω μηνύματος και με αυτόν τον κωδικό θα έχετε έκπτωση στα προϊόντα μας."
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="501dp" />
+        android:id="@+id/feedback"
+        android:layout_width="199dp"
+        android:layout_height="47dp"
+        android:text="Πολύ Δυσαρεστημένος"
+        android:textColor="#FFFEFE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
