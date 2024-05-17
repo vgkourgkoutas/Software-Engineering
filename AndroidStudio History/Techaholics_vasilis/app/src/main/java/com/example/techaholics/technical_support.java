@@ -1,31 +1,31 @@
 package com.example.techaholics;
 
-import android.os.Bundle;
-import android.widget.Button;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class device_technical_problem extends AppCompatActivity {
+public class technical_support extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_device_technical_problem);
+        setContentView(R.layout.activity_technical_support);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button back = (Button) findViewById(R.id.back);
+        Button back1 = (Button) findViewById(R.id.back1);
 
-        back.setOnClickListener(new View.OnClickListener() {
+        back1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), menu_client.class);
@@ -33,27 +33,15 @@ public class device_technical_problem extends AppCompatActivity {
             }
         });
 
-        Button playstation = (Button) findViewById(R.id.playstation);
+        Button device_problem = (Button) findViewById(R.id.device_problem);
 
-        playstation.setOnClickListener(new View.OnClickListener() {
+        device_problem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), technical_support_ps5.class);
+                Intent startIntent = new Intent(getApplicationContext(), device_technical_problem.class);
                 startActivity(startIntent);
             }
         });
-
-        Button samsung = (Button) findViewById(R.id.samsung);
-
-        samsung.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), technical_support_samsung.class);
-                startActivity(startIntent);
-            }
-        });
-
-
 
     }
 }
