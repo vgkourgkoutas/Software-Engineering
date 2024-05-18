@@ -10,22 +10,22 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class rating extends AppCompatActivity {
+public class resale_product extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_rating);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        setContentView(R.layout.activity_resale_product);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main2), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button g_back = (Button) findViewById(R.id.g_back);
+        Button button_back = (Button) findViewById(R.id.button_back);
 
-        g_back.setOnClickListener(new View.OnClickListener() {
+        button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), menu_client.class);
@@ -33,25 +33,14 @@ public class rating extends AppCompatActivity {
             }
         });
 
-        Button product = (Button) findViewById(R.id.product);
+        Button submissionform = (Button) findViewById(R.id.submissionform);
 
-        product.setOnClickListener(new View.OnClickListener() {
+        submissionform.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), product_rate.class);
+                Intent startIntent = new Intent(getApplicationContext(), message_reproduct.class);
                 startActivity(startIntent);
             }
         });
-
-        Button shop = (Button) findViewById(R.id.shop);
-
-        shop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
-                startActivity(startIntent);
-            }
-        });
-
     }
 }

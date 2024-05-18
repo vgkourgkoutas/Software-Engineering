@@ -50,6 +50,25 @@ public class menu_client extends AppCompatActivity {
         });
 
 
+        Button rate_product_shop = (Button) findViewById(R.id.rate_product_shop);
+
+        rate_product_shop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), rating.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button resale = (Button) findViewById(R.id.resale);
+
+        resale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), resale_product.class);
+                startActivity(startIntent);
+            }
+        });
 
     }
 }

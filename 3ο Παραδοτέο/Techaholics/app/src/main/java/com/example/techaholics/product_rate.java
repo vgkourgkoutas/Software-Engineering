@@ -78,7 +78,7 @@ public class product_rate extends AppCompatActivity {
         backprorate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), rating_product.class);
+                Intent startIntent = new Intent(getApplicationContext(), rating.class);
                 startActivity(startIntent);
             }
         });
