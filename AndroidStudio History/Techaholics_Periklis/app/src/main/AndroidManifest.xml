@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Periklis"
         tools:targetApi="31">
         <activity
+            android:name=".Current_Deliveries"
+            android:exported="false" />
+        <activity
             android:name=".Alldone_delivery"
             android:exported="false" />
         <activity
