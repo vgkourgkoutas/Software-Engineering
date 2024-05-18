@@ -10,15 +10,16 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="345dp"
-        android:layout_height="116dp"
+        android:layout_width="273dp"
+        android:layout_height="83dp"
         android:text=" Προβολή και Επεξεργασία Προϊόντων"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -30,15 +31,25 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="354dp"
-        android:layout_height="103dp"
+        android:layout_width="267dp"
+        android:layout_height="97dp"
         android:text="Επεξεργασία Προφίλ Διανομέα"
-        android:textSize="24sp"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.602"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663" />
+        app:layout_constraintVertical_bias="0.661" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
