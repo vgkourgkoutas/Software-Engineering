@@ -34,7 +34,7 @@
         android:layout_width="267dp"
         android:layout_height="97dp"
         android:text="Επεξεργασία Προφίλ Διανομέα"
-        android:textSize="24sp"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.602"
@@ -50,16 +50,6 @@
         tools:layout_editor_absoluteY="16dp"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="129dp"
-        android:layout_height="77dp"
-        android:text="Επεξεργασία Προφίλ"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.624"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
