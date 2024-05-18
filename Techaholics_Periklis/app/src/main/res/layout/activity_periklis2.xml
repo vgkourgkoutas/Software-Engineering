@@ -5,7 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#255358"
     tools:context=".Periklis2">
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="113dp"
+        android:layout_height="57dp"
+        android:text="Πήγαινε Πίσω"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="159dp"
+        android:layout_height="89dp"
+        android:text="Προς Αποστολή Παραγγελίας"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="285dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
