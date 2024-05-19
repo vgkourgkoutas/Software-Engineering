@@ -13,10 +13,16 @@
         android:theme="@style/Theme.Techaholics"
         tools:targetApi="31">
         <activity
+            android:name=".new_tech_location1_place2"
+            android:exported="false" />
+        <activity
+            android:name=".new_tech_location1_place1"
+            android:exported="false" />
+        <activity
             android:name=".new_tech_location1"
             android:exported="false" />
         <activity
-            android:name=".new_tech_choose_location_n_people"
+            android:name=".new_tech_choose_location"
             android:exported="false" />
         <activity
             android:name=".new_tech"
