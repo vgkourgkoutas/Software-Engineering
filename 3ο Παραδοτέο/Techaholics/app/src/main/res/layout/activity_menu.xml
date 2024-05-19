@@ -42,4 +42,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.391" />
 
+    <Button
+        android:id="@+id/supplier_button"
+        android:layout_width="141dp"
+        android:layout_height="102dp"
+        android:text="Εφοδιασμός Προϊόντων"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
