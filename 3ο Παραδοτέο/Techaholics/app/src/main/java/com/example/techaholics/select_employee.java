@@ -1,38 +1,46 @@
 package com.example.techaholics;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.content.Intent;
 import android.widget.Button;
-
+import android.view.View;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class menu extends AppCompatActivity {
+public class select_employee extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_select_employee);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button work_cord = (Button) findViewById(R.id.work_cord);
+        Button next = (Button) findViewById(R.id.next);
 
-        work_cord.setOnClickListener(new View.OnClickListener() {
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), select_post.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button back1 = (Button) findViewById(R.id.back1);
+
+        back1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), work_coordination.class);
                 startActivity(startIntent);
             }
         });
-
     }
 }
