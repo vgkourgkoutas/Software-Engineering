@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Techaholics"
         tools:targetApi="31">
         <activity
+            android:name=".job_advert"
+            android:exported="false" />
+        <activity
+            android:name=".message_money"
+            android:exported="false" />
+        <activity
+            android:name=".list_employee"
+            android:exported="false" />
+        <activity
+            android:name=".select_post"
+            android:exported="false" />
+        <activity
             android:name=".select_employee"
             android:exported="false" />
         <activity

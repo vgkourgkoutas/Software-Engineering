@@ -1,7 +1,9 @@
 package com.example.techaholics;
 
 import android.os.Bundle;
-
+import android.content.Intent;
+import android.widget.Button;
+import android.view.View;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -19,6 +21,36 @@ public class work_coordination extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        Button av1 = (Button) findViewById(R.id.av1);
+
+        av1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), select_employee.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button av2 = (Button) findViewById(R.id.av2);
+
+        av2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), select_employee.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button av3 = (Button) findViewById(R.id.av3);
+
+        av3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), select_employee.class);
+                startActivity(startIntent);
+            }
         });
     }
 }
