@@ -10,22 +10,22 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class select_employee extends AppCompatActivity {
+public class list_employee extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_select_employee);
+        setContentView(R.layout.activity_list_employee);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button next = (Button) findViewById(R.id.next);
+        Button back3 = (Button) findViewById(R.id.back3);
 
-        next.setOnClickListener(new View.OnClickListener() {
+        back3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), select_post.class);
@@ -33,12 +33,12 @@ public class select_employee extends AppCompatActivity {
             }
         });
 
-        Button back1 = (Button) findViewById(R.id.back1);
+        Button emplmoney = (Button) findViewById(R.id.emplmoney);
 
-        back1.setOnClickListener(new View.OnClickListener() {
+        emplmoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), work_coordination.class);
+                Intent startIntent = new Intent(getApplicationContext(), message_money.class);
                 startActivity(startIntent);
             }
         });

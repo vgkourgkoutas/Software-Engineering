@@ -88,7 +88,7 @@
         app:layout_constraintVertical_bias="0.866" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/av1"
         android:layout_width="129dp"
         android:layout_height="59dp"
         android:text="Διαθέσιμος"
@@ -113,7 +113,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/av2"
         android:layout_width="126dp"
         android:layout_height="57dp"
         android:text="Διαθέσιμος"
@@ -126,7 +126,7 @@
         app:layout_constraintVertical_bias="0.667" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/av3"
         android:layout_width="129dp"
         android:layout_height="52dp"
         android:text="Διαθέσιμος"
