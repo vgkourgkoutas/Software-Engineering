@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Techaholics"
         tools:targetApi="31">
         <activity
+            android:name=".new_tech_location2"
+            android:exported="false" />
+        <activity
             android:name=".new_tech_location1_place2"
             android:exported="false" />
         <activity
