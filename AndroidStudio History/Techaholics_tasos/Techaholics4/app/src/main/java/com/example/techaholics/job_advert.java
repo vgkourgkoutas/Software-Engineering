@@ -1,6 +1,9 @@
 package com.example.techaholics;
 
 import android.os.Bundle;
+import android.content.Intent;
+import android.widget.Button;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,17 @@ public class job_advert extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button sub = (Button) findViewById(R.id.sub);
+
+        sub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), message_correctform.class);
+                startActivity(startIntent);
+            }
+        });
+
+
     }
 }
