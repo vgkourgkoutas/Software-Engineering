@@ -40,19 +40,6 @@
         app:layout_constraintVertical_bias="0.595"></Button>
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="295dp"
-        android:layout_height="73dp"
-        android:text="Προϊόντα Apple"
-        android:textColor="#F8F5F5"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
-
-    <TextView
         android:id="@+id/button1"
         android:layout_width="118dp"
         android:layout_height="70dp"
@@ -66,19 +53,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.594"></TextView>
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="224dp"
-        android:layout_height="82dp"
-        android:text="Apple Watch Series9"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
 
     <Button
         android:id="@+id/goback"
@@ -97,13 +71,27 @@
         android:id="@+id/add_to_cart"
         android:layout_width="188dp"
         android:layout_height="101dp"
-        android:text="Αγορά"
+        android:text="Προσθήκη στο καλάθι"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.777" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="330dp"
+        android:layout_height="109dp"
+        android:text="Παρακαλώ συμπληρώστε την ποσότητα του προϊόντος που επιθυμείτε να αγοράσετε:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

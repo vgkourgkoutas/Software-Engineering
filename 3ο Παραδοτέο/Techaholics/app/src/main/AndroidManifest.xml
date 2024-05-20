@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Techaholics"
         tools:targetApi="31">
         <activity
+            android:name=".add_product"
+            android:exported="false" />
+        <activity
+            android:name=".choose_quantityofproduct"
+            android:exported="false" />
+        <activity
             android:name=".supplier_products2"
             android:exported="false" />
         <activity
@@ -88,7 +94,7 @@
             android:name=".rating_product"
             android:exported="false" />
         <activity
-            android:name=".create_order"
+            android:name=".make_order"
             android:exported="false" />
         <activity
             android:name=".menu_delivery"

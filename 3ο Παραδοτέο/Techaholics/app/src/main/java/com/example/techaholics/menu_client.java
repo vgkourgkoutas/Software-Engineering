@@ -36,7 +36,7 @@ public class menu_client extends AppCompatActivity {
         createOrderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), create_order.class);
+                Intent startIntent = new Intent(getApplicationContext(), make_order.class);
                 startActivity(startIntent);
             }
         });

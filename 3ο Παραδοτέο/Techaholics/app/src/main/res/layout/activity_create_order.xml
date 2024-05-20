@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#255358"
-    tools:context=".create_order">
+    tools:context=".make_order">
 
     <TextView
         android:id="@+id/textView5"
@@ -274,5 +274,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.675" />
+
+    <Button
+        android:id="@+id/create_order"
+        android:layout_width="207dp"
+        android:layout_height="86dp"
+        android:text="Δημιουργία Παραγγελίας"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
