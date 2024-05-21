@@ -11,27 +11,38 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class menu_delivery extends AppCompatActivity {
+public class select_page extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_menu_delivery);
+        setContentView(R.layout.activity_select_page);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button show_edit_delivery = (Button) findViewById(R.id.show_edit_delivery);
+        Button show_products = (Button) findViewById(R.id.show_products);
 
-        show_edit_delivery.setOnClickListener(new View.OnClickListener() {
+        show_products.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), select_page.class);
+                Intent startIntent = new Intent(getApplicationContext(), show_orders.class);
                 startActivity(startIntent);
             }
         });
+
+        Button buttonback = (Button) findViewById(R.id.buttonback);
+
+        buttonback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), menu_delivery.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 }
