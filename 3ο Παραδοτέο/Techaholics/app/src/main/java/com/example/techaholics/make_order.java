@@ -45,5 +45,55 @@ public class make_order extends AppCompatActivity {
             }
         });
 
+        Button buy2 = (Button) findViewById(R.id.buy2);
+
+        buy2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), choose_quantityofproduct.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button buy3 = (Button) findViewById(R.id.buy3);
+
+        buy3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), choose_quantityofproduct.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button buy4 = (Button) findViewById(R.id.buy4);
+
+        buy4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), choose_quantityofproduct.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button buy5 = (Button) findViewById(R.id.buy5);
+
+        buy5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), choose_quantityofproduct.class);
+                startActivity(startIntent);
+            }
+        });
+
+        Button create_order = (Button) findViewById(R.id.create_order);
+
+        create_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), choose_payment_method.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 }

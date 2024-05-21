@@ -11,32 +11,25 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class choose_payment_method extends AppCompatActivity {
-
-    String name;
-    String surname;
-    String order_address;
-
-    int wallet;
+public class varify_order extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_choose_payment_method);
+        setContentView(R.layout.activity_varify_order);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
+        Button go_back_order_page = (Button) findViewById(R.id.go_back_order_page);
 
-        Button complete_order = (Button) findViewById(R.id.complete_order);
-
-        complete_order.setOnClickListener(new View.OnClickListener() {
+        go_back_order_page.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), varify_order.class);
+                Intent startIntent = new Intent(getApplicationContext(), menu_client.class);
                 startActivity(startIntent);
             }
         });
