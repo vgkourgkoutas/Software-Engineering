@@ -4,38 +4,39 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.widget.Button;
 import android.view.View;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class message_correctform extends AppCompatActivity {
+public class main_client_page extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_message_correctform);
+        setContentView(R.layout.activity_main_client_page);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button nextmove = (Button) findViewById(R.id.nextmove);
+        Button seeint = (Button) findViewById(R.id.seeint);
 
-        nextmove.setOnClickListener(new View.OnClickListener() {
+        seeint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), main_client_page.class);
+                Intent startIntent = new Intent(getApplicationContext(), see_forjob.class);
                 startActivity(startIntent);
             }
         });
 
-        Button bak = (Button) findViewById(R.id.bak);
+        Button back = (Button) findViewById(R.id.back);
 
-        bak.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), job_advert.class);

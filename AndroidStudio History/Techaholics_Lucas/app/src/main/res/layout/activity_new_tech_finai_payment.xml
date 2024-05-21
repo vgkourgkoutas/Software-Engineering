@@ -6,42 +6,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#255358"
-    tools:context=".message_correctform">
-
-    <Button
-        android:id="@+id/bak"
-        android:layout_width="165dp"
-        android:layout_height="47dp"
-        android:text="Πήγαινε πίσω"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+    tools:context=".new_tech_finai_payment">
 
     <TextView
-        android:id="@+id/textView43"
-        android:layout_width="313dp"
-        android:layout_height="191dp"
-        android:text="Η συμπλήρωση της φόρμας έγινε σωστά. Σύντομα θα εμφανίστει η συγκρεκριμένη αγγελία στην κεντρική σελίδα των πελατών."
+        android:id="@+id/textView68"
+        android:layout_width="352dp"
+        android:layout_height="46dp"
+        android:text="ΕΝΗΜΕΡΩΣΗ ΓΙΑ ΝΕΕΣ ΤΕΧΝΟΛΟΓΙΕΣ"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466" />
+        app:layout_constraintVertical_bias="0.181" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:text="Το πόσο δεσμεύτηκε επιτυχώς!"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
 
     <Button
-        android:id="@+id/nextmove"
-        android:layout_width="140dp"
-        android:layout_height="65dp"
-        android:text="Επόμενο"
+        android:id="@+id/button54"
+        android:layout_width="222dp"
+        android:layout_height="75dp"
+        android:text="Υποβολή Φόρμας"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

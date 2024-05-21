@@ -1,9 +1,6 @@
 package com.example.techaholics;
 
 import android.os.Bundle;
-import android.content.Intent;
-import android.widget.Button;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,29 +8,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class job_advert extends AppCompatActivity {
+public class new_tech_confirm_n_date extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_job_advert);
+        setContentView(R.layout.activity_new_tech_confirm_n_date);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        Button sub = (Button) findViewById(R.id.sub);
-
-        sub.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), message_correctform.class);
-                startActivity(startIntent);
-            }
-        });
-
-
     }
 }

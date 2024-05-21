@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Techaholics"
         tools:targetApi="31">
         <activity
+            android:name=".add_time_salary"
+            android:exported="false" />
+        <activity
+            android:name=".check_form"
+            android:exported="false" />
+        <activity
+            android:name=".see_forjob"
+            android:exported="false" />
+        <activity
+            android:name=".main_client_page"
+            android:exported="false" />
+        <activity
             android:name=".message_correctform"
             android:exported="false" />
         <activity

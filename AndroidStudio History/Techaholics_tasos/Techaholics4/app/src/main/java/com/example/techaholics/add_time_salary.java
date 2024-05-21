@@ -10,37 +10,38 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class message_correctform extends AppCompatActivity {
+public class add_time_salary extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_message_correctform);
+        setContentView(R.layout.activity_add_time_salary);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Button backt = (Button) findViewById(R.id.backt);
 
-        Button nextmove = (Button) findViewById(R.id.nextmove);
-
-        nextmove.setOnClickListener(new View.OnClickListener() {
+        backt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), main_client_page.class);
+                Intent startIntent = new Intent(getApplicationContext(), check_form.class);
                 startActivity(startIntent);
             }
         });
 
-        Button bak = (Button) findViewById(R.id.bak);
+        Button register = (Button) findViewById(R.id.register);
 
-        bak.setOnClickListener(new View.OnClickListener() {
+        register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), job_advert.class);
                 startActivity(startIntent);
             }
         });
+
+
     }
 }
