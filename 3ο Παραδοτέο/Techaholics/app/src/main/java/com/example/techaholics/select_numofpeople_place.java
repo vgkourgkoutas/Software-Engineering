@@ -1,64 +1,55 @@
 package com.example.techaholics;
 
-import android.os.Bundle;
 import android.content.Intent;
-import android.widget.Button;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class work_coordination extends AppCompatActivity {
+public class select_numofpeople_place extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_work_coordination);
+        setContentView(R.layout.activity_select_numofpeople_place);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button av1 = (Button) findViewById(R.id.av1);
+        Button backb = (Button) findViewById(R.id.backb);
 
-        av1.setOnClickListener(new View.OnClickListener() {
+        backb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), select_employee.class);
+                Intent startIntent = new Intent(getApplicationContext(), fill_form.class);
                 startActivity(startIntent);
             }
         });
 
-        Button av2 = (Button) findViewById(R.id.av2);
+        Button george_square = (Button) findViewById(R.id.george_square);
 
-        av2.setOnClickListener(new View.OnClickListener() {
+        george_square.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), select_employee.class);
+                Intent startIntent = new Intent(getApplicationContext(), new_tech_location1.class);
                 startActivity(startIntent);
             }
         });
 
-        Button av3 = (Button) findViewById(R.id.av3);
+        Button olga_square = (Button) findViewById(R.id.olga_square);
 
-        av3.setOnClickListener(new View.OnClickListener() {
+        olga_square.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), select_employee.class);
-                startActivity(startIntent);
-            }
-        });
-
-        Button go_back_menu = (Button) findViewById(R.id.go_back_menu);
-
-        go_back_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), menu_shop.class);
+                Intent startIntent = new Intent(getApplicationContext(), new_tech_location2.class);
                 startActivity(startIntent);
             }
         });

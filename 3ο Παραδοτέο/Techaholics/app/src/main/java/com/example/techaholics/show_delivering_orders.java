@@ -11,40 +11,28 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class show_orders extends AppCompatActivity {
+public class show_delivering_orders extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_show_orders);
+        setContentView(R.layout.activity_show_delivering_orders);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button buttonback2 = (Button) findViewById(R.id.buttonback2);
+        Button back5 = (Button) findViewById(R.id.back5);
 
-        buttonback2.setOnClickListener(new View.OnClickListener() {
+        back5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), select_page.class);
+                Intent startIntent = new Intent(getApplicationContext(), show_orders.class);
                 startActivity(startIntent);
             }
         });
-
-        Button delivery_now = (Button) findViewById(R.id.deliver_now);
-
-        delivery_now.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), show_delivering_orders.class);
-                startActivity(startIntent);
-            }
-        });
-
-
 
     }
 }

@@ -11,22 +11,22 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class supplier extends AppCompatActivity {
+public class fill_form extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_supplier);
+        setContentView(R.layout.activity_fill_form);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button back_go = (Button) findViewById(R.id.back_go);
+        Button back_b = (Button) findViewById(R.id.back_b);
 
-        back_go.setOnClickListener(new View.OnClickListener() {
+        back_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), menu_shop.class);
@@ -34,24 +34,17 @@ public class supplier extends AppCompatActivity {
             }
         });
 
-        Button apple_supplier = (Button) findViewById(R.id.apple_supplier);
+        Button choose_location = (Button) findViewById(R.id.choose_location);
 
-        apple_supplier.setOnClickListener(new View.OnClickListener() {
+        choose_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), supplier_products.class);
+                Intent startIntent = new Intent(getApplicationContext(), select_numofpeople_place.class);
                 startActivity(startIntent);
             }
         });
 
-        Button sony_supplier = (Button) findViewById(R.id.sony_supplier);
 
-        sony_supplier.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), supplier_products2.class);
-                startActivity(startIntent);
-            }
-        });
+
     }
 }

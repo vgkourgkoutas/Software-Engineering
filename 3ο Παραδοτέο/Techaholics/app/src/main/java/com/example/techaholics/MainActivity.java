@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     // Successful login
                     Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
 
-                    Intent startIntent = new Intent(getApplicationContext(), menu.class);
+                    Intent startIntent = new Intent(getApplicationContext(), menu_shop.class);
                     startActivity(startIntent);
 
                 }

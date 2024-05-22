@@ -12,7 +12,7 @@
         android:id="@+id/show_products"
         android:layout_width="277dp"
         android:layout_height="145dp"
-        android:text=" Προβολή και Επεξεργασία Προϊόντων"
+        android:text=" Προβολή και Επεξεργασία Παραγγελιών"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,18 +27,6 @@
         tools:layout_editor_absoluteX="632dp"
         tools:layout_editor_absoluteY="44dp"
         tools:srcCompat="@tools:sample/avatars" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="267dp"
-        android:layout_height="97dp"
-        android:text="Επεξεργασία Προφίλ Διανομέα"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708" />
 
     <TextView
         android:id="@+id/textView47"
