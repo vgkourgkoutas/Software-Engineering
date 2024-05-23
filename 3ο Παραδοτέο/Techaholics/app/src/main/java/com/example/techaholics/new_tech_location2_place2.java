@@ -11,39 +11,38 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class new_tech_location1_place1 extends AppCompatActivity {
+public class new_tech_location2_place2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_new_tech_location1_place1);
+        setContentView(R.layout.activity_new_tech_location2_place2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button goback2 = (Button) findViewById(R.id.goback2);
+        Button back_bu2 = (Button) findViewById(R.id.back_bu2);
 
-        goback2.setOnClickListener(new View.OnClickListener() {
+        back_bu2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), new_tech_location1.class);
+                Intent startIntent = new Intent(getApplicationContext(), new_tech_location2.class);
                 startActivity(startIntent);
             }
         });
 
-        Button next_page = (Button) findViewById(R.id.next_page);
+        Button move2 = (Button) findViewById(R.id.move2);
 
-        next_page.setOnClickListener(new View.OnClickListener() {
+        move2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), select_dateofevent.class);
                 startActivity(startIntent);
             }
         });
-
 
     }
 }

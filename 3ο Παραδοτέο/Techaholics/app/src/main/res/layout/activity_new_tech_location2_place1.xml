@@ -6,78 +6,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#255358"
-    tools:context=".new_tech_location2">
+    tools:context=".new_tech_location2_place1">
 
     <Button
-        android:id="@+id/backbutton"
-        android:layout_width="146dp"
-        android:layout_height="65dp"
-        android:text="Πήγαινε Πίσω"
+        android:id="@+id/back_bu"
+        android:layout_width="143dp"
+        android:layout_height="74dp"
+        android:text="Πήγαινε Πϊσω"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.049" />
 
     <TextView
-        android:id="@+id/textView56"
-        android:layout_width="363dp"
-        android:layout_height="37dp"
+        android:id="@+id/textView59"
+        android:layout_width="349dp"
+        android:layout_height="35dp"
         android:text="ΕΝΗΜΕΡΩΣΗ ΓΙΑ ΝΕΕΣ ΤΕΧΝΟΛΟΓΙΕΣ"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.181" />
 
     <TextView
-        android:id="@+id/textView57"
-        android:layout_width="105dp"
+        android:id="@+id/textView60"
+        android:layout_width="206dp"
         android:layout_height="53dp"
-        android:text="Πλ. Όλγας"
+        android:text="Πλ. Όλγας-Αίθουσα 1"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.245" />
-
-    <TextView
-        android:id="@+id/textView58"
-        android:layout_width="151dp"
-        android:layout_height="50dp"
-        android:text="Επιλέξτε μια αίυουσα:"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.331" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <Button
-        android:id="@+id/room3"
+        android:id="@+id/move"
+        android:layout_width="172dp"
+        android:layout_height="90dp"
+        android:text="Συνέχεια"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <EditText
+        android:id="@+id/editTextText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Αίθουσα 1"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Εισάγετε αριθμό ατόμων"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/room4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Αίθουσα 2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.635" />
 </androidx.constraintlayout.widget.ConstraintLayout>
