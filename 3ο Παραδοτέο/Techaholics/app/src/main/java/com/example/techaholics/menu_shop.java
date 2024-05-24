@@ -54,5 +54,15 @@ public class menu_shop extends AppCompatActivity {
             }
         });
 
+        Button job_advert = (Button) findViewById(R.id.job_advert);
+
+        job_advert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), ad_form.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 }
