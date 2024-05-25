@@ -123,7 +123,7 @@
         app:layout_constraintVertical_bias="0.926" />
 
     <Button
-        android:id="@+id/button23"
+        android:id="@+id/create_offer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Όχι"

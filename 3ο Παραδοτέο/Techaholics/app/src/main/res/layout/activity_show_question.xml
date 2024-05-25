@@ -24,10 +24,10 @@
         android:id="@+id/textView11"
         android:layout_width="331dp"
         android:layout_height="44dp"
-        android:text="Να εμφα"
+        android:text="Να εμφανιστεί η διαδρομή?"
         android:textColor="#FFF6F6"
         android:textColorLink="#EAE7E7"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
@@ -60,7 +60,7 @@
         app:layout_constraintVertical_bias="0.345" />
 
     <Button
-        android:id="@+id/button21"
+        android:id="@+id/make_packet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ακύρωση Παραγγελίας"

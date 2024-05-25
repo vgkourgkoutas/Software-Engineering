@@ -64,5 +64,16 @@ public class menu_shop extends AppCompatActivity {
             }
         });
 
+
+        Button discounts_and_packages = (Button) findViewById(R.id.discounts_and_packages);
+
+        discounts_and_packages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), choose_page.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 }
