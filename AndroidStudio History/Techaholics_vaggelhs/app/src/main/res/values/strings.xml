@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Techaholics List</string>
+
+    <string-array name="items">
+        <item>Playstation 5</item>
+        <item>iPhone 15</item>
+        <item>Samsung Television Oled</item>
+        <item>Mi Band 6</item>
+        <item>Huawei Freebuds Pro 2 (HeadPhones)</item>
+    </string-array>
+
+    <string-array name="prices">
+        <item>500€</item>
+        <item>750€</item>
+        <item>1000€</item>
+        <item>60€</item>
+        <item>500€</item>
+        <item>170€</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Gaming</item>
+        <item>Smartphones</item>
+        <item>Televisions</item>
+        <item>Smartwatches</item>
+        <item>HeadPhones</item>
+    </string-array>
+
+
+</resources>
