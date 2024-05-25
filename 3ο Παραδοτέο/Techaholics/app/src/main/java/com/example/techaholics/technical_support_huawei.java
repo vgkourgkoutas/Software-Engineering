@@ -39,7 +39,7 @@ public class technical_support_huawei extends AppCompatActivity {
         yes_huawei.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), technical_support_helpful_yes.class);
+                Intent startIntent = new Intent(getApplicationContext(), success_solut.class);
                 startActivity(startIntent);
             }
         });

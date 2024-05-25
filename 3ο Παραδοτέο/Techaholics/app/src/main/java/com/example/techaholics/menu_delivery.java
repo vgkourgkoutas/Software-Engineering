@@ -29,7 +29,7 @@ public class menu_delivery extends AppCompatActivity {
         show_edit_delivery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), select_page.class);
+                Intent startIntent = new Intent(getApplicationContext(), offers.class);
                 startActivity(startIntent);
             }
         });

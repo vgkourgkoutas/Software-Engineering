@@ -28,7 +28,7 @@ public class product_rate extends AppCompatActivity {
         rate1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
+                Intent startIntent = new Intent(getApplicationContext(), form_evaluation.class);
                 startActivity(startIntent);
             }
         });
@@ -38,7 +38,7 @@ public class product_rate extends AppCompatActivity {
         rate2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
+                Intent startIntent = new Intent(getApplicationContext(), form_evaluation.class);
                 startActivity(startIntent);
             }
         });
@@ -48,7 +48,7 @@ public class product_rate extends AppCompatActivity {
         rate3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
+                Intent startIntent = new Intent(getApplicationContext(), form_evaluation.class);
                 startActivity(startIntent);
             }
         });
@@ -58,7 +58,7 @@ public class product_rate extends AppCompatActivity {
         rate4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
+                Intent startIntent = new Intent(getApplicationContext(), form_evaluation.class);
                 startActivity(startIntent);
             }
         });
@@ -68,7 +68,7 @@ public class product_rate extends AppCompatActivity {
         rate5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), page_rate.class);
+                Intent startIntent = new Intent(getApplicationContext(), form_evaluation.class);
                 startActivity(startIntent);
             }
         });

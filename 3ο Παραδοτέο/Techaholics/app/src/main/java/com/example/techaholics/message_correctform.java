@@ -28,7 +28,7 @@ public class message_correctform extends AppCompatActivity {
         bak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), ad_form.class);
+                Intent startIntent = new Intent(getApplicationContext(), add_form.class);
                 startActivity(startIntent);
             }
         });

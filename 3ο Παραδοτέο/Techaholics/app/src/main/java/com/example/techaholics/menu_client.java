@@ -36,7 +36,7 @@ public class menu_client extends AppCompatActivity {
         createOrderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), make_order.class);
+                Intent startIntent = new Intent(getApplicationContext(), page_product.class);
                 startActivity(startIntent);
             }
         });
@@ -44,7 +44,7 @@ public class menu_client extends AppCompatActivity {
         technical_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), technical_support.class);
+                Intent startIntent = new Intent(getApplicationContext(), type_problem.class);
                 startActivity(startIntent);
             }
         });
@@ -65,7 +65,7 @@ public class menu_client extends AppCompatActivity {
         resale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), resale_product.class);
+                Intent startIntent = new Intent(getApplicationContext(), personal_data_descr.class);
                 startActivity(startIntent);
             }
         });

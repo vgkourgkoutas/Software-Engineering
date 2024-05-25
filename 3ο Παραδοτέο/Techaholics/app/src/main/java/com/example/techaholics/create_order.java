@@ -1,18 +1,15 @@
 package com.example.techaholics;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
 
 public class create_order extends AppCompatActivity {
 
@@ -27,11 +24,9 @@ public class create_order extends AppCompatActivity {
             return insets;
         });
 
-        Button button = (Button) findViewById(R.id.buy);
+        Button go_back_order_page = (Button) findViewById(R.id.go_back_order_page);
 
-        Button go_back = (Button) findViewById(R.id.go_back);
-
-        go_back.setOnClickListener(new View.OnClickListener() {
+        go_back_order_page.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), menu_client.class);

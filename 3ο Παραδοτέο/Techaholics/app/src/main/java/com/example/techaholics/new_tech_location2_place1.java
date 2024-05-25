@@ -39,7 +39,7 @@ public class new_tech_location2_place1 extends AppCompatActivity {
         move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), select_dateofevent.class);
+                Intent startIntent = new Intent(getApplicationContext(), list_dates.class);
                 startActivity(startIntent);
             }
         });

@@ -41,7 +41,7 @@ public class choose_page extends AppCompatActivity {
         make_offer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), make_discount.class);
+                Intent startIntent = new Intent(getApplicationContext(), save_discount.class);
                 startActivity(startIntent);
             }
         });
@@ -51,7 +51,7 @@ public class choose_page extends AppCompatActivity {
         create_product.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), make_pack.class);
+                Intent startIntent = new Intent(getApplicationContext(), complete_create_packages.class);
                 startActivity(startIntent);
             }
         });

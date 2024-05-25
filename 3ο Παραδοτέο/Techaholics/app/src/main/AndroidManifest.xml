@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Techaholics"
         tools:targetApi="31">
         <activity
-            android:name=".make_pack"
+            android:name=".complete_create_packages"
             android:exported="false" />
         <activity
-            android:name=".make_discount"
+            android:name=".save_discount"
             android:exported="false" />
         <activity
             android:name=".choose_page"
@@ -28,7 +28,7 @@
             android:name=".check"
             android:exported="false" />
         <activity
-            android:name=".see_forjob"
+            android:name=".client_forjob"
             android:exported="false" />
         <activity
             android:name=".main_client_page"
@@ -37,13 +37,13 @@
             android:name=".message_correctform"
             android:exported="false" />
         <activity
-            android:name=".ad_form"
+            android:name=".add_form"
             android:exported="false" />
         <activity
-            android:name=".new_tech_final_payment"
+            android:name=".create_speak"
             android:exported="false" />
         <activity
-            android:name=".select_wageofspeaker"
+            android:name=".select_wage_speak_place"
             android:exported="false" />
         <activity
             android:name=".new_tech_location2_place2"
@@ -52,7 +52,7 @@
             android:name=".new_tech_location2_place1"
             android:exported="false" />
         <activity
-            android:name=".select_dateofevent"
+            android:name=".list_dates"
             android:exported="false" />
         <activity
             android:name=".new_tech_location2"
@@ -67,73 +67,73 @@
             android:name=".new_tech_location1"
             android:exported="false" />
         <activity
-            android:name=".select_numofpeople_place"
+            android:name=".place_numofpeople"
             android:exported="false" />
         <activity
-            android:name=".fill_form"
+            android:name=".form_of_speak"
             android:exported="false" />
         <activity
-            android:name=".show_question"
+            android:name=".location_address_map"
             android:exported="false" />
         <activity
             android:name=".current_details"
             android:exported="false" />
         <activity
-            android:name=".show_delivering_orders"
+            android:name=".orders_first_near_distributor"
             android:exported="false" />
         <activity
-            android:name=".select_page"
+            android:name=".offers"
             android:exported="false" />
         <activity
-            android:name=".show_orders"
+            android:name=".existing_orders"
             android:exported="false" />
         <activity
-            android:name=".supplier_buy"
+            android:name=".complete_supply"
             android:exported="false" />
         <activity
-            android:name=".varify_order"
+            android:name=".create_order"
             android:exported="false" />
         <activity
-            android:name=".add_product"
+            android:name=".add_to_bucket"
             android:exported="false" />
         <activity
-            android:name=".choose_quantityofproduct"
+            android:name=".product"
             android:exported="false" />
         <activity
-            android:name=".supplier_products2"
+            android:name=".number_of_products2"
             android:exported="false" />
         <activity
-            android:name=".supplier_products"
+            android:name=".number_of_products"
             android:exported="false" />
         <activity
-            android:name=".supplier"
+            android:name=".product_supply"
             android:exported="false" />
         <activity
-            android:name=".message_money"
+            android:name=".electronic_wallet_empl"
             android:exported="false" />
         <activity
-            android:name=".list_employee"
+            android:name=".list_employee_numsell"
             android:exported="false" />
         <activity
-            android:name=".select_post"
+            android:name=".post"
             android:exported="false" />
         <activity
             android:name=".select_employee"
             android:exported="false" />
         <activity
-            android:name=".work_coordination"
+            android:name=".list_employee_avail"
             android:exported="false" />
         <activity
-            android:name=".message_reproduct"
+            android:name=".message_of_amount"
             android:exported="false" />
         <activity
-            android:name=".resale_product"
+            android:name=".personal_data_descr"
             android:exported="false" />
         <activity
-            android:name=".message_ratecode"
+            android:name=".complete_evaluation"
             android:exported="false" />
         <activity
-            android:name=".page_rate"
+            android:name=".form_evaluation"
             android:exported="false" />
         <activity
             android:name=".product_rate"
@@ -142,10 +142,10 @@
             android:name=".rating"
             android:exported="false" />
         <activity
-            android:name=".technical_support_submit_rating"
+            android:name=".eval_help"
             android:exported="false" />
         <activity
-            android:name=".technical_support_helpful_yes"
+            android:name=".success_solut"
             android:exported="false" />
         <activity
             android:name=".technical_support_huawei"
@@ -157,7 +157,7 @@
             android:name=".technical_support_iphone"
             android:exported="false" />
         <activity
-            android:name=".technical_support"
+            android:name=".type_problem"
             android:exported="false" />
         <activity
             android:name=".technical_support_samsung"
@@ -169,13 +169,13 @@
             android:name=".device_technical_problem"
             android:exported="false" />
         <activity
-            android:name=".choose_payment_method"
+            android:name=".compl_inform"
             android:exported="false" />
         <activity
             android:name=".rating_product"
             android:exported="false" />
         <activity
-            android:name=".make_order"
+            android:name=".page_product"
             android:exported="false" />
         <activity
             android:name=".menu_delivery"

@@ -38,7 +38,7 @@ public class time_salary extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), ad_form.class);
+                Intent startIntent = new Intent(getApplicationContext(), add_form.class);
                 startActivity(startIntent);
             }
         });

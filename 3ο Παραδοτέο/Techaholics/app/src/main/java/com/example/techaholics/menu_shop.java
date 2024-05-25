@@ -29,7 +29,7 @@ public class menu_shop extends AppCompatActivity {
         work_cord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), work_coordination.class);
+                Intent startIntent = new Intent(getApplicationContext(), list_employee_avail.class);
                 startActivity(startIntent);
             }
         });
@@ -39,7 +39,7 @@ public class menu_shop extends AppCompatActivity {
         supplier_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), supplier.class);
+                Intent startIntent = new Intent(getApplicationContext(), product_supply.class);
                 startActivity(startIntent);
             }
         });
@@ -49,7 +49,7 @@ public class menu_shop extends AppCompatActivity {
         new_technologies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), fill_form.class);
+                Intent startIntent = new Intent(getApplicationContext(), form_of_speak.class);
                 startActivity(startIntent);
             }
         });
@@ -59,7 +59,7 @@ public class menu_shop extends AppCompatActivity {
         job_advert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), ad_form.class);
+                Intent startIntent = new Intent(getApplicationContext(), add_form.class);
                 startActivity(startIntent);
             }
         });

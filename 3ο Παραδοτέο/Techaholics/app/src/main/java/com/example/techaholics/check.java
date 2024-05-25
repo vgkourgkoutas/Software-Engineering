@@ -28,7 +28,7 @@ public class check extends AppCompatActivity {
         bac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), see_forjob.class);
+                Intent startIntent = new Intent(getApplicationContext(), client_forjob.class);
                 startActivity(startIntent);
             }
         });

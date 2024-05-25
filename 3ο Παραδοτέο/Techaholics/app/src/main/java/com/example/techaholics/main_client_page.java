@@ -28,7 +28,7 @@ public class main_client_page extends AppCompatActivity {
         seeint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), see_forjob.class);
+                Intent startIntent = new Intent(getApplicationContext(), client_forjob.class);
                 startActivity(startIntent);
             }
         });
@@ -38,7 +38,7 @@ public class main_client_page extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), ad_form.class);
+                Intent startIntent = new Intent(getApplicationContext(), add_form.class);
                 startActivity(startIntent);
             }
         });

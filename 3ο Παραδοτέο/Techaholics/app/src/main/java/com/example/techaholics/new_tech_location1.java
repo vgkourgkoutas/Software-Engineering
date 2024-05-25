@@ -29,7 +29,7 @@ public class new_tech_location1 extends AppCompatActivity {
         backbutt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), select_numofpeople_place.class);
+                Intent startIntent = new Intent(getApplicationContext(), place_numofpeople.class);
                 startActivity(startIntent);
             }
         });

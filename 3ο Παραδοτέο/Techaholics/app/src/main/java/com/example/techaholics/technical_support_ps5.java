@@ -39,7 +39,7 @@ public class technical_support_ps5 extends AppCompatActivity {
         yes_ps5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), technical_support_helpful_yes.class);
+                Intent startIntent = new Intent(getApplicationContext(), success_solut.class);
                 startActivity(startIntent);
             }
         });
