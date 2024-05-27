@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#255358"
+    tools:context=".technical_support_huawei">
+
+    <Button
+        android:id="@+id/back_huawei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Πήγαινε Πίσω"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="272dp"
+        android:layout_height="38dp"
+        android:text="ΤΕΧΝΙΚΗ ΥΠΟΣΤΗΡΙΞΗ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="270dp"
+        android:layout_height="58dp"
+        android:text="Huawei Freebuds pro 2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="326dp"
+        android:layout_height="72dp"
+        android:text="1) Βεβαιωθείτε ότι τα ακουστικά έχουν επαρκή ισχύ μπαταρίας: Βεβαιωθείτε ότι η ενδεικτική λυχνία είναι κίτρινη ή πράσινη μετά το άνοιγμα της θήκης φόρτισης"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="333dp"
+        android:layout_height="63dp"
+        android:text="2) Απενεργοποιήστε και ενεργοποιήστε ξανά το Bluetooth στο τηλέφωνο/tablet σας (κάντε κλικ εδώ εάν το Bluetooth δεν ενεργοποιηθεί)."
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="333dp"
+        android:layout_height="87dp"
+        android:text="Ελέγξτε εάν τα ακουστικά σας (για παράδειγμα, FreeBuds 5) αναφέρονται ήδη στο PAIRED DEVICES ή στο My Device. Εάν ναι, αποσυνδέστε ή ξεχάστε τα ακουστικά. αν όχι, μεταβείτε στο επόμενο βήμα"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="226dp"
+        android:layout_height="31dp"
+        android:text="Ήταν χρήσιμες αυτές οι οδηγίες;"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
+
+    <Button
+        android:id="@+id/yes_huawei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ναι"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Όχι"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+</androidx.constraintlayout.widget.ConstraintLayout>
